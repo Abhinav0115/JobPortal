@@ -16,8 +16,8 @@ export default function App({
     useEffect(() => {
         const handleBeforeUnload = (event) => {
             event.preventDefault();
-            localStorage.removeItem("user");
-            Cookies.remove("token");
+//             localStorage.removeItem("user");
+//             Cookies.remove("token");
         };
 
         window.addEventListener("beforeunload", handleBeforeUnload);
